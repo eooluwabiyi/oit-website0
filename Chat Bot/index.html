@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chat Bot </title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+    
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="submit" class="collapsible">Chat with us
+            <i id="chat-icon" style="color: #fff;" class="fas fa-comments"></i>
+        </button>
+
+        <div class="contents">
+            <div class="full-chat-block">
+                <!-- MESSAGE CONTAINER -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- MESSAGES -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- USER INPUT BOX -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg" placeholder="Type 'Enter' to send a message">
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <a href="#"><i id="chat-icon" class="fab fa-whatsapp" style="color: green;"></i></a>
+                                <i id="chat-icon" class="fa fa-fw fa-heart" style="color: crimson;" onclick="heartButton"></i>
+                                <i id="chat-icon" class="fas fa-share" style="color: #333;" onclick="sendButton"></i>
+                                
+                            </div>
+                        </div>
+                        <div class="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="static/scripts/chat.js"></script>
+    <script src="static/scripts/responses.js"></script>
+</body>
+</html>

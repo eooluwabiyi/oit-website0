@@ -1,0 +1,212 @@
+//@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Sass Template */
+@import'./include/variables.scss';
+@import'./include/global.scss';
+@import'./include/typography.scss';
+@import'./include/color.scss';
+
+/* Native Css */
+#navBar{
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    box-shadow: 4px 2px 4px efefef;
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+  }
+
+  .join-us-btn:hover{
+    background-color: #fff;
+    border: 2px solid #FF9900;
+    transition: .3s ease-in;
+  }
+
+  .sign-in-btn{
+    color: black;
+  }
+  .sign-in-btn:hover{
+    background-color: #146EB4;
+    color: #fff;
+    border: none;
+    transition: .3s ease-in;
+  }
+
+  .chatWithUs{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .chatWithUs button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: rebeccapurple;
+    padding: 10px 15px;
+    box-shadow: 4px 2px 4px grey;
+  }
+
+  .chatWithUs button a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .chat-icon{
+    color: #fff;
+  }
+
+  .others{
+      margin-right: 25px;
+  }
+  
+  .hamburger{
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition-property: opacity, filter;
+      transition-duration: 0.05s;
+      transition-timing-function: linear;
+      font: inherit;
+      color: inherit;
+      text-transform: none;
+      background-color: transparent;
+      border: 0;
+      margin-right: 20px;
+      margin: 0 20px 0 20px;
+      overflow: visible;
+      }
+  
+  .hamburger-lines{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    margin: 3px;
+  }
+
+  #SideNav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: #fff;
+    transition: 1s;
+    box-shadow: 4px 4px 4px grey;
+    overflow: hidden;
+  }
+  
+  .sideNav-lists{
+    list-style-type: none;
+    margin-left: -25px;
+    padding-bottom: 25px;
+  }
+  .sideNav-lists > li{
+    margin: 4px;
+  }
+  side-nav-title{
+    text-shadow: #353F50;
+  }
+  .closeSideNav{
+    font-size: 25px;
+    padding-left: -35px;
+    margin-left: -30px;
+    margin-right: 23px;
+  }
+  .sidenavbar-brand{
+    margin-right: 50px;
+  }
+  .about-list{
+    padding: 1px 0;
+  }
+  
+  .about-txt{
+    font-size: 18px;
+    color: #353F50;
+    margin: 8px 20px 6px 0;
+    font-weight: 550;
+  }
+  
+  .about-list  a{
+    text-decoration: none;
+    color: #353F50;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  .footer{
+    padding-top: 80px;
+  }
+  
+  .socials{
+    list-style-type: none;
+  }
+  
+  .join-us{
+    list-style-type: none;
+  }
+  
+  .about-us-title{
+    padding-left: 32px;
+  }
+  
+  .join-us-title{
+    padding-left: 32px;
+  }
+  
+  .about-us{
+    list-style-type: none;
+  }
+  
+  .foot-upper{
+    margin-bottom: 170px;
+  }
+  
+  .copyright{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: space-between;
+  }
+  
+  .copyright-txt{
+    padding-top: 20px;
+  }
+  
+  .extra-links > .links{
+    color: #000;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  
+  .last-extra-link{
+    color: #000;
+    text-decoration: none;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .copyright{
+      display: block;
+      
+    }
+
+    .chatWithUs button{
+      padding: 10px 10px 5px 10px;
+    }
+
+    .chatWithUs button a{
+      display: none;
+    }
+    
+  }
